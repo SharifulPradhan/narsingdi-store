@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="ui fixed menu">
-      <div className="ui container center">
+    <div className='container'>
+      <div className="nav nav-light">
         <h2>NARSINGDI STORE</h2>
       </div>
     </div>

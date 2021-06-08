@@ -11,7 +11,7 @@ import ProductDetail from './containers/ProductDetail';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
 
       <Router>
         <Header />
@@ -25,7 +25,7 @@ function App() {
 
         </Switch>
       </Router>
-
+      <footer className="border shadow m-5 p-5 d-flex justify-content-center">Copyright &copy; Shariful Pradhan Hridoy</footer>
     </div>
   );
 }
