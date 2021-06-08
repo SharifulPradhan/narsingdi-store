@@ -1,9 +1,31 @@
 import './App.css';
+import Header from './containers/Header';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+import ProductListing from './containers/ProductListing';
+import NotFound from './containers/NotFound';
+import ProductDetail from './containers/ProductDetail';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+
+      <Router>
+        <Header />
+        <Switch>
+
+          <Route path='/' exact component={ProductListing} />
+
+          <Route path='/product/:productId' exact component={ProductDetail} />
+
+          <Route path='*' component={NotFound} />
+
+        </Switch>
+      </Router>
+
     </div>
   );
 }
